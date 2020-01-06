@@ -22,4 +22,21 @@ getFooter.classList.add("main");
 var getFooterAgain = document.querySelector(".footer");
 getFooterAgain.classList.remove("main");
 
-//9 -
+// 8 - Create a new li element
+var newLi = document.createElement("li");
+
+// 9 - Give the li the text "four".
+newLi.innerText = "four";
+
+// 10 - Append the li to the ul element.
+var ourUl = document.querySelector("ul");
+ourUl.appendChild(newLi);
+
+// 11 - Loop over all of the lis inside the ol tag and give them a background color of "green".
+var allLi = document.querySelectorAll("ol li");
+for(var i = 0; i < allLi.length; i++) {
+    allLi[i].style.backgroundColor = "green";
+}
+// 12 - Remove the div with a class of footer.
+var getRidFooter = document.querySelector(".footer");
+getRidFooter.remove();
