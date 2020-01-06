@@ -14,3 +14,19 @@ document.querySelector("ol .third");
 //5
 var changeContainer = document.querySelector("#container");
 changeContainer.innerText = "Hello!";
+
+
+//8) Create a new li element
+var newLi = createElement("li");
+
+newLi.innerText = "four";
+
+var ourUl = querySelector("ul");
+
+ourUl.appendChild(newLi);
+
+var allLi = querySelectorAll("ol li");
+
+for(var i = 0; i < allLi.length; i++) {
+    allLi[i].backgroundColor = "green";
+}
